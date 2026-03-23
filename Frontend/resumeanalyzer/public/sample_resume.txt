@@ -1,0 +1,40 @@
+JOHN DOE
+Software Developer | Full Stack Engineer
+john.doe@email.com | +1 (555) 123-4567
+
+PROFESSIONAL SUMMARY
+Experienced Full Stack Developer with 5+ years of expertise in building scalable web applications using modern technologies. Proficient in JavaScript, React, Node.js, and cloud platforms. Strong problem-solving skills and experience working with cross-functional teams in Agile environments.
+
+TECHNICAL SKILLS
+Programming Languages: JavaScript, Python, TypeScript, SQL, HTML, CSS
+Frontend: React, Vue, Angular, Bootstrap, Tailwind, SASS, Redux, Next.js
+Backend: Node.js, Express, Django, Flask, Spring Boot, Laravel
+Databases: MySQL, PostgreSQL, MongoDB, Redis, Firebase
+DevOps & Cloud: Docker, Kubernetes, AWS, Azure, GitHub Actions, Jenkins, CI/CD
+Tools & Platforms: Git, GitHub, GitLab, Jira, Webpack, Vite
+Other: REST API, GraphQL, Microservices, RESTful, Testing, Jest, Mocha, Cypress, Agile, Scrum
+
+PROFESSIONAL EXPERIENCE
+Senior Developer - Tech Company Inc.
+January 2021 - Present
+- Developed and maintained full-stack web applications using React and Node.js
+- Implemented Docker containerization and Kubernetes orchestration for microservices
+- Managed AWS infrastructure and implemented CI/CD pipelines with GitHub Actions
+- Led technical discussions and mentored junior developers
+- Technologies: JavaScript, React, Node.js, Express, MongoDB, Docker, AWS, GraphQL
+
+Full Stack Developer - Digital Solutions Ltd.
+June 2018 - December 2020
+- Built responsive web applications using Vue and Angular frameworks
+- Designed and implemented RESTful APIs with Spring Boot and Django
+- Worked with PostgreSQL and Redis databases in production environments
+- Deployed applications using Docker and Jenkins CI/CD pipelines
+- Technologies: Vue, Angular, Spring Boot, Django, PostgreSQL, Redis, Docker, Jenkins
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology, 2018
+
+CERTIFICATIONS
+AWS Solutions Architect Associate
+Kubernetes Certified Application Developer (CKAD)
