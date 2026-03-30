@@ -5,7 +5,7 @@ import Register from "../components/Register";
 
 function LoginPage(){
   const navigate = useNavigate();
-  const [showRegister, setShowRegister] = useState(true);
+  const [showRegister, setShowRegister] = useState(false);
 
   const handleRegisterSuccess = () => {
     setShowRegister(false);
