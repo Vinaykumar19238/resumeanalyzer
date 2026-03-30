@@ -11,17 +11,19 @@ RUN npm run build
 # Stage 2: Build Backend
 FROM maven:3.9.6-eclipse-temurin-17-alpine AS backend-build
 WORKDIR /app/backend
-# Copy the frontend build to the static resources folder of the backend
-# This allows Spring Boot to serve the frontend as static content
-COPY --from=frontend-build /app/frontend/dist /app/backend/src/main/resources/static
-# Copy backend source and build
+# Copy backend source
 COPY Backend/backend/pom.xml .
 COPY Backend/backend/src ./src
+# Copy the frontend build to the static resources folder of the backend
+COPY --from=frontend-build /app/frontend/dist /app/backend/src/main/resources/static
+# Build backend
 RUN mvn clean package -DskipTests
 
 # Stage 3: Run the Application
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY --from=backend-build /app/backend/target/*.jar app.jar
+# Use a more specific copy to avoid multiple jars if present
+COPY --from=backend-build /app/backend/target/resumeAnalyzer-1.0.0.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Optimize JVM for faster startup in container
+ENTRYPOINT ["java", "-XX:+UseParallelGC", "-Xms256m", "-Xmx512m", "-jar", "app.jar"]
